@@ -1,0 +1,184 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Portfolio for Bincom</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <h1 class="logo">Israel</h1>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio-section">Portfolio</a></li>
+            <li><a href="#friends">Friends</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="menu-icon" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <section id="home">
+        <div>
+          <img class="home-img" src="./images/prfim.jpg" alt="israel's image" />
+        </div>
+        <div class="head-content">
+          <h2>I'm Israel Omole</h2>
+          <p>
+            I'm a frontend developer specialized in building (and occasionally
+            designing) exceptional digital experiences. I am focused on building
+            responsive web pages and applications for any niche.
+          </p>
+          <div class="home-btns">
+            <a class="btn1" href="#portfolio">Portfolio</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="about">
+      <div>
+        <img class="about-img" src="./images/izzy2.jpg" alt="israel's image" />
+      </div>
+      <div class="head-content">
+        <h2>About Me</h2>
+        <p>
+          I'm a Frontend Developer with strong knowledge of HTML5,
+          CSS3,JavaScript and React Js. Detail-oriented with ability to own a
+          project, follow complex instructions, diagnose and resolve issues.
+          Possess problem-solving skills with a career objective to create
+          stunning interactive websites that are visually appealing as well as
+          user-friendly.
+        </p>
+      </div>
+    </section>
+    <section id="portfolio-section">
+      <h2 class="portfolio-heading">Portfolio</h2>
+      <div id="portfolio">
+        <div class="portfolio-box">
+          <img class="app" src="/images/atuzal.png" alt="" />
+          <a href="https://atuzal-app.vercel.app/" class="desc-btn">View</a>
+        </div>
+        <div class="portfolio-box">
+          <img class="app" src="/images/dashb.png" alt="" />
+          <a href="https://riby-ticketing-app.vercel.app/" class="desc-btn"
+            >View</a
+          >
+        </div>
+        <div class="portfolio-box">
+          <img class="app" src="/images/nextapp.png" alt="" />
+          <a href="https://promptai-swart.vercel.app/" class="desc-btn">View</a>
+        </div>
+      </div>
+    </section>
+    <section id="friends">
+      <h2 class="friends-heading">My Tech Circle</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/images/hope.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/izzy.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/izzy2.jpg" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="row mb-5 mt-3 pt-md-3">
+          <div class="col-lg-8">
+            <h1 class="display-4 mb-4">Contact Me</h1>
+            <hr class="t_border my-4 ml-0 text-left" />
+          </div>
+        </div>
+        <div class="row sec_sp">
+          <div class="col-lg-12">
+            <div class="alert rounded-0 co_alert d-none">
+              <p class="my-0"></p>
+            </div>
+          </div>
+          <div class="col-lg-5 mb-5">
+            <h3 class="color_sec py-4">Get in touch</h3>
+            <address>
+              <strong>Email:</strong>
+              <a href="mailto:omolewayeolagd1997@gmail.com"
+                >omolewayeolagd1997@gmail.com</a
+              ><br /><br />
+              <p><strong>Phone:</strong> +2349030038597</p>
+            </address>
+            <p>Available anytime during the week</p>
+          </div>
+          <div class="col-lg-7 d-flex align-items-center">
+            <form class="contact__form w-100" onsubmit="handleSubmit(event)">
+              <div class="row">
+                <div class="col-lg-6 form-group">
+                  <input
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    value=""
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="col-lg-6 form-group">
+                  <input
+                    class="form-control rounded-0"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    type="email"
+                    value=""
+                    required
+                  />
+                </div>
+              </div>
+              <textarea
+                class="form-control rounded-0"
+                id="message"
+                name="message"
+                placeholder="Message"
+                rows="5"
+                required
+              ></textarea>
+              <br />
+              <div class="row">
+                <div class="col-lg-12 form-group">
+                  <button class="btn ac_btn" type="submit">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="d-none loading-bar"></div>
+    </section>
+    <footer>
+      <p>
+        &copy; 2023 Bincom Dev Center Interview Test. Created by Omole Israel.
+      </p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
